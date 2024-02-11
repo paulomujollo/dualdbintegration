@@ -15,7 +15,7 @@ public class JdbcTemplateConfig {
         return new JdbcTemplate(dataSource);
     }
 
-    @Bean(name = "dbtowJbcTemplate")
+    @Bean(name = "dbtwoJdbcTemplate")
     public JdbcTemplate dbtwoJdbcTemplate(@Qualifier("dbtwoDataSource") DataSource dataSource) {
         return new JdbcTemplate(dataSource);
     }
